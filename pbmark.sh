@@ -8,6 +8,6 @@ touch ~/bookmarks_personal.txt
 if (( $# == 1 )); then
     echo $1 >> ~/bookmarks_personal.txt	# Append!
 else
-	bmark=$(cat ~/bookmarks_personal.txt | dmenu -i -l 40 -p "Address (S-RTN override):")
+	bmark=$(cat ~/bookmarks_personal.txt | dmenu -i -l 40 -sb '#58355E' -sf '#FFF689' -p "Address (S-RTN override):")
 	x-www-browser $bmark
 fi

@@ -6,6 +6,6 @@
 # Hold shift and enter to force what you type in the bar instead.
 touch ~/dlaunch.txt
 
-dl=$(cat ~/dlaunch.txt | dmenu -i -l 40 -p "Command (S-RTN override):")
+dl=$(cat ~/dlaunch.txt | dmenu -i -l 40 -sb '#495F41' -sf '#00FDDC' -p "Command (S-RTN override):")
 echo $dl >> ~/dlaunch.txt
 uxterm -fa default -fs 12 -e $dl
