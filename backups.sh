@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # Run NAS backup
-
-# Remember to mount the backups drive locally first!
 read -p "CHECK YOU HAVE MOUNTED THE RECEIVING DRIVE FIRST! - press a key to continue"
-
 
 
 # PRIMARY BACKUPS
