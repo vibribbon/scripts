@@ -4,11 +4,7 @@
 
 # ----------------------------------------------------------------------
 # -- TODO --
-# https://www.google.com/photos/about/
-# https://www.photopos.com/PPP3OnlineEditor/Default.aspx
-# https://www.photopos.com//PPP3OnlineEditor/GetPerfectPhoto.aspx
-# https://www.xiconeditor.com/Default.aspx
-# https://www.sketchup.com/plans-and-pricing/sketchup-free
+
 # ----------------------------------------------------------------------
 
 
@@ -24,6 +20,7 @@
 
 # -Editing
 # apt-get install -y audacity
+# apt-get install -y lmms
 
 # -Volume Control
 # apt-get install -y pulseaudio pavucontrol # sound settings and volume control
@@ -46,6 +43,9 @@
 # apt-get install -y handbrake
 # apt-get install -y flac
 
+# -Recorders
+# apt-get install -y obs-studio
+
 # -Superlight
 # apt-get install -y mplayer
 # ----------------------------------------------------------------------
@@ -57,6 +57,7 @@
 # apt-get install -y gimp
 # apt-get install -y krita
 # apt-get install -y inkscape
+# apt-get install -y libreoffice-draw
 
 # -Organising / Mastering
 # apt-get install -y darktable
@@ -71,6 +72,7 @@
 # apt-get install -y feh
 # apt-get install -y mirage
 # apt-get install -y gpicview
+# apt-get install -y sxiv	# superlight viewer
 # ----------------------------------------------------------------------
 
 
@@ -105,6 +107,8 @@
 # -Writing
 # apt-get install -y libreoffice-writer
 # apt-get install -y abiword
+# apt-get install -y lyx	# latex processor with strong formula support
+# apt-get install -y texmaker	# latex processor with strong formula support
 
 # -Spreadsheet / Stats
 # apt-get install -y libreoffice-calc
@@ -131,6 +135,7 @@
 # apt-get install -y calibre	# Ebook suite
 # apt-get install -y fcitx
 # apt-get install -y ghostscript
+# libreoffice-draw also has limited pdf editing support
 
 # -Calendar
 # apt-get install -y ncal # basic calendar
@@ -140,6 +145,7 @@
 
 # -Other
 # apt-get install -y cups	# Full print server inc drivers
+# apt-get install -y orca	# a screenreader
 # ----------------------------------------------------------------------
 
 
@@ -150,8 +156,12 @@
 # apt-get install -y vim	# Terminal
 # apt-get install -y geany	# Convenient graphical IDE
 # apt-get install -y notepadqq	# Notepad++ port
+# flatpak install flathub com.vscodium.codium	# vscode clone
 # apt-get install -y gedit
 # apt-get install -y micro	# Terminal
+
+# -Tools
+# apt-get install -y icdiff	# a file diff (compare) tool
 
 # -Environments
 # apt-get install -y python3 python3-pip # install python
@@ -192,10 +202,12 @@
 # -Compression
 # apt-get install -y p7zip-full p7zip-rar
 # apt-get install -y xarchiver	# Gui for 7zip / etc
+# flatpak install peazip	# Gui client
 
 # -Backup
 # apt-get install -y rsync
 # apt-get install -y luckybackup
+# apt-get install -y timeshift
 
 # -Recovery
 # apt-get install -y extundelete
