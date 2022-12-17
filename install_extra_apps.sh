@@ -248,6 +248,10 @@
 # -Network Monitors
 # apt-get install -y nmon
 # apt-get install -y traceroute
+# apt-get install -y finger
+# apt-get install -y whois
+# apt-get install -y speedtest-cli
+# apt-get install -y dnsutils	# installs dig and nslookup fror DNS
 # apt-get install -y nmap	# Port scanner and network ID tool
 # apt-get install -y iftop # internet monitor
 # apt-get install -y nethogs # list apps using the most bandwidth
@@ -261,8 +265,10 @@
 # ----------------------------------------------------------------------
 # -- SECURITY --
 # -Network Security
-#apt-get install -y ufw	gufw	# Firewall and gui (GUFW)
-#apt-get install -y snort	# network packet tracker / blocker
+# apt-get install -y ufw gufw	# Firewall and gui (GUFW)
+# apt-get install -y snort	# network packet tracker / blocker
+# apt-get install -y wireshark	# network packet sniffer
+# apt-get install -y sqlmap	# sql server injection tester
 
 # -Antivirus
 #apt-get install -y clamav clamtk
