@@ -30,6 +30,7 @@ find . -print0 | while read -d $'\0' file; do
 done
 echo ""
 
+
 echo "-- REPLACE UPPER CASE WITH LOWER CASE --"
 find . -print0 | while read -d $'\0' file; do
 	if [ "$file" != `echo "$file" | tr [:upper:] [:lower:]` ]
@@ -39,6 +40,7 @@ find . -print0 | while read -d $'\0' file; do
 	fi;
 done
 echo ""
+
 
 echo "-- REMOVE BRACKETS FROM FILENAMES --"
 find . -print0 | while read -d $'\0' file; do
@@ -52,3 +54,29 @@ echo ""
 
 # in tr -s is to squeeze repeated characters into a single character
 # format is tr match_string replace_string
+
+
+echo "-- REMOVE SETUP_ FROM FILENAME START --"
+find . -print0 | while read -d $'\0' file; do
+	echo "$file"
+	if [ "$file" != `echo "$file" | sed 's/^\.\/setup_//'` ]
+	then
+		echo "$file" " => " `echo "$file" | sed 's/^.\/setup_//'`
+		mv "$file" `echo "$file" | sed 's/^.\/setup_//'`
+	fi;
+done
+echo ""
+
+
+echo "-- REMOVE SETUP_ FROM FILENAME START --"
+find . -print0 | while read -d $'\0' file; do
+	echo "$file"
+	if [ "$file" != `echo "$file" | sed 's/^\.\/gog_//'` ]
+	then
+		echo "$file" " => " `echo "$file" | sed 's/^.\/gog_//'`
+		mv "$file" `echo "$file" | sed 's/^.\/gog_//'`
+	fi;
+done
+echo ""
+
+# lines start with ./
